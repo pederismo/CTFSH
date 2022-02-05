@@ -1,0 +1,365 @@
+name;is_pathl;diagnosis;TEST;notes
+CT_0;1;SAH;0;"TB-Comment:Große Arachnoidalzyste (ohne pathologischen Wert). Bei der vermeintlichen SAB bin nicht nicht ganz sicher auf diesen Bildern; differentialdiagnostisch kommt auch ein Hypophysentumor in Betracht -> MRT oder KM-CT"
+CT_10;1;IPH;0;to-be-relabeled
+CT_100;1;LST;0;
+CT_101;0;HEALTHY;0;TB-Comment: Ich glaube, dass das ein junger Patient an einem komischen Gerät ist. Wenn das ein älterer Patient mit Koma wäre könnte das auch ein diffuser hypoxischer Hirnschaden sein....
+CT_102;1;"IPH;FRAC";0;to-be-relabeled
+CT_103;1;OTHER;0;TB-Comment: Ausgedehnte Kalzifikationen in den STammganglien bds (nicht sicher pathologisch)
+CT_104;0;HEALTHY;0;
+CT_105;0;HEALTHY;-1;Pre-contrast
+CT_106;1;;0;to-be-relabeled
+CT_107;1;"IPH;IVH;SDH;EDH;SAH;FRAC;MSE;MSHIFT";0;to-be-relabeled
+CT_108;1;"IPH;SST";0;
+CT_109;1;SAH;0;to-be-relabeled
+CT_11;1;"LST;ASDH;CSDH";0;TB-Comment:Marklagerinfarkt
+CT_110;1;MAP;0;
+CT_111;1;"IPH;IVH;MSE;MSHIFT";0;to-be-relabeled
+CT_112;1;OTHER;0;TB-Comment: Subgaleal hematoma
+CT_113;1;"IPH;MSE";0;to-be-relabeled
+CT_114;1;"ASDH;CSDH;MSHIFT";0;TB-Comment: SDH old+neu
+CT_117;1;CAV;-1;Pre-contrast
+CT_119;1;OTHER;-1;Pre-contrast, TB-Comment: Galeahämatom
+CT_12;1;;0;to-be-relabeled
+CT_121;1;"IPH;FRAC";0;to-be-relabeled
+CT_122;0;HEALTHY;-1;Pre-contrast
+CT_124;0;HEALTHY;-1;Pre-contrast
+CT_126;1;"IPH;MSE";0;to-be-relabeled
+CT_127;0;;0;
+CT_129;1;SDH;0;to-be-relabeled
+CT_13;1;"EDH;IPH;TUM;FRAC";-1;Pre-contrast
+CT_130;0;;0;
+CT_135;1;"IPH;IVH;MSE;MSHIFT";0;to-be-relabeled
+CT_137;1;"ASDH;CSDH;FRAC";-1;Pre-contrast
+CT_138;0;HEALTHY;-1;Pre-contrast
+CT_139;1;EDH;0;to-be-relabeled
+CT_14;1;IPH;0;to-be-relabeled
+CT_140;1;"IPH;FRAC";0;to-be-relabeled
+CT_141;0;HEALTHY;-1;Pre-contrast
+CT_142;1;"ATY;MAP";0;
+CT_144;1;TUM;-1;Pre-contrast,TB-Comment: Zystizerkose?
+CT_146;0;HEALTHY;-1;Pre-contrast
+CT_148;1;OTHER;0;Exclude. Contrast Enhancement
+CT_149;1;"IPH;SAH";0;to-be-relabeled
+CT_15;1;"IPH;MSE";0;to-be-relabeled
+CT_150;0;HEALTHY;0;
+CT_151;1;MAP;0;
+CT_152;1;OTHER;0;TB-Comment: Osteom Schädelkalotte
+CT_153;1;ASDH;0;CSDH
+CT_154;1;IPH;0;to-be-relabeled
+CT_155;1;"SDH;MSE;MSHIFT";0;to-be-relabeled
+CT_158;0;HEALTHY;0;
+CT_159;1;;0;to-be-relabeled
+CT_16;1;FRAC;0;
+CT_160;1;LST;0;TB-Comment: Marklagerinfarkt
+CT_162;0;HEALTHY;0;
+CT_164;0;HEALTHY;0;
+CT_165;0;HEALTHY;-1;Pre-contrast
+CT_166;1;"IPH;MSE;MSHIFT";0;to-be-relabeled
+CT_167;0;HEALTHY;0;
+CT_168;1;SAH;0;
+CT_17;1;LST;0;
+CT_174;1;LST;0;
+CT_175;1;OTHER;-1;Pre-contrast, TB-Comment: A.e. postinfektiöse kortikale Verkalkung
+CT_177;0;HEALTHY;-1;Pre-contrast
+CT_178;0;HEALTHY;0;
+CT_179;0;HEALTHY;0;
+CT_18;1;IPH;0;to-be-relabeled
+CT_180;1;LST;0;
+CT_181;1;"EDH;SAH;FRAC;MSE;MSHIFT";0;to-be-relabeled
+CT_182;1;"SST;IPH";-1;Pre-contrast
+CT_183;1;"IPH;MSE;MSHIFT";0;to-be-relabeled
+CT_184;0;HEALTHY;0;
+CT_185;0;HEALTHY;0;
+CT_186;1;"LST;ASDH;CSDH";-1;Pre-contrast
+CT_187;0;HEALTHY;0;
+CT_188;1;"IPH;SAH;MSE;MSHIFT";0;to-be-relabeled
+CT_19;1;"IPH;IVH;SAH";0;to-be-relabeled
+CT_190;1;SDH;0;to-be-relabeled
+CT_191;1;"LST;ATY;MAP;OTHER";-1;Pre-contrast, TB-Comment: Marklagerinfarkte
+CT_192;1;"ASDH;MSHIFT;HER";-1;Pre-contrast
+CT_193;1;"SST;LST";0;
+CT_194;0;HEALTHY;-1;Pre-contrast
+CT_195;0;HEALTHY;-1;Pre-contrast
+CT_196;1;IPH;0;to-be-relabeled
+CT_198;1;LST;0;
+CT_2;1;LST;0;
+CT_20;0;HEALTHY;0;
+CT_200;1;MAP;0;
+CT_201;0;HEALTHY;0;
+CT_202;1;SAH;0;to-be-relabeled
+CT_203;0;HEALTHY;0;
+CT_204;0;HEALTHY;0;
+CT_205;0;HEALTHY;-1;Pre-contrast
+CT_206;0;HEALTHY;0;
+CT_207;1;"IPH;MSE";0;to-be-relabeled
+CT_21;0;HEALTHY;-1;Pre-contrast
+CT_210;1;"SDH;MSE";0;to-be-relabeled
+CT_211;1;IPH;0;to-be-relabeled
+CT_213;1;IPH;0;to-be-relabeled
+CT_214;1;MAP;0;
+CT_215;1;SAH;0;to-be-relabeled
+CT_216;1;"IPH;SDH;EDH;SAH;MSE;MSHIFT";0;to-be-relabeled
+CT_217;1;IPH;0;to-be-relabeled
+CT_218;0;HEALTHY;0;
+CT_219;1;"IPH;SDH";0;to-be-relabeled
+CT_22;1;"IPH;MSE;MSHIFT";0;to-be-relabeled
+CT_220;1;"LST;MAP;OTHER";0;TB-Comment: Marklagerinfarkt
+CT_221;1;SAH;0;to-be-relabeled
+CT_222;0;HEALTHY;-1;Pre-contrast
+CT_225;1;"IPH;MSE;MSHIFT";0;to-be-relabeled
+CT_226;1;"IPH;MSE;MSHIFT";0;to-be-relabeled
+CT_227;1;"IPH;IVH;MSE;MSHIFT";0;to-be-relabeled
+CT_229;0;HEALTHY;-1;Pre-contrast
+CT_23;0;HEALTHY;-1;Pre-contrast
+CT_231;1;MAP;0;
+CT_232;1;"LST;ATY";0;
+CT_233;0;HEALTHY;0;
+CT_234;1;"LST;ASDH";0;
+CT_235;0;HEALTHY;0;
+CT_238;1;"SDH;MSE";0;to-be-relabeled
+CT_239;1;"CSDH;MAP";-1;Pre-contrast
+CT_241;1;FRAC;0;
+CT_242;0;HEALTHY;0;
+CT_243;1;"SDH;MSE;MSHIFT";0;to-be-relabeled
+CT_246;0;HEALTHY;0;
+CT_248;1;SDH;0;to-be-relabeled
+CT_249;1;"IPH;MSE";0;to-be-relabeled
+CT_25;0;HEALTHY;0;
+CT_250;1;SAH;0;to-be-relabeled
+CT_251;1;"IPH;SAH;FRAC;MSE;MSHIFT";0;to-be-relabeled
+CT_252;0;HEALTHY;-1;Pre-contrast
+CT_253;1;MAP;0;
+CT_255;1;OTHER;0;TB-Comment: A.e. posttraumatische Defekte.
+CT_256;1;"IPH;IVH;MSE";0;to-be-relabeled
+CT_257;1;ASDH;0;
+CT_26;0;HEALTHY;0;
+CT_260;1;"ASDH;CSDH;IPH;OTHER";-1;Pre-contrast, TB-Comment: Contusion damage
+CT_261;1;FRAC;-1;Pre-contrast
+CT_262;0;;0;
+CT_263;1;"IPH;MSE";0;to-be-relabeled
+CT_265;1;TUM;-1;Pre-contrast
+CT_266;1;"IPH;MSE;MSHIFT";0;to-be-relabeled
+CT_267;0;HEALTHY;0;
+CT_268;1;IPH;0;to-be-relabeled
+CT_269;1;MAP;0;
+CT_27;0;HEALTHY;0;
+CT_270;1;ATY;0;
+CT_271;1;MAP;0;
+CT_272;0;HEALTHY;0;
+CT_274;1;"SDH;MSE;MSHIFT";0;to-be-relabeled
+CT_275;1;ASDH;-1;Pre-contrast
+CT_276;0;HEALTHY;-1;Pre-contrast
+CT_277;1;"SDH;MSE;MSHIFT";0;to-be-relabeled
+CT_278;1;"ASDH;CSDH";-1;Pre-contrast
+CT_28;1;"IPH;FRAC;MSE";0;to-be-relabeled
+CT_281;1;"LST;ASDH;CSDH;ATY";0;TB-Comment: Marklagerischämie
+CT_283;1;LST;0;TB-Comment: Artefakt
+CT_284;0;HEALTHY;-1;Pre-contrast
+CT_285;1;"IPH;SAH;MSE";0;to-be-relabeled
+CT_286;0;HEALTHY;-1;Pre-contrast
+CT_287;1;SST;0;
+CT_289;1;TUM;-1;Pre-contrast
+CT_29;1;LST;0;
+CT_290;1;"LST;MAP";0;TB-Comment: Marklagerischämie. Artefakt
+CT_291;1;MAP;0;
+CT_292;0;HEALTHY;0;
+CT_293;0;HEALTHY;0;
+CT_294;0;HEALTHY;0;
+CT_296;1;"IPH;IVH;MSE";0;to-be-relabeled
+CT_299;0;HEALTHY;0;
+CT_3;0;HEALTHY;0;
+CT_30;0;HEALTHY;0;
+CT_300;0;HEALTHY;0;
+CT_301;1;LST;0;
+CT_302;0;HEALTHY;0;
+CT_303;1;SAH;-1;Pre-contrast
+CT_305;1;"IPH;MSE";0;to-be-relabeled
+CT_306;1;HEALTHY;0;
+CT_308;0;HEALTHY;0;
+CT_309;1;"IPH;FRAC";0;to-be-relabeled
+CT_31;0;HEALTHY;-1;Pre-contrast
+CT_310;1;"SDH;MSE;MSHIFT";0;to-be-relabeled
+CT_311;0;HEALTHY;-1;Pre-contrast
+CT_312;1;IPH;-1;Pre-contrast
+CT_313;0;HEALTHY;0;
+CT_314;1;"IPH;MSE";0;to-be-relabeled
+CT_316;1;IPH;0;to-be-relabeled
+CT_317;0;HEALTHY;0;
+CT_318;1;SDH;0;to-be-relabeled
+CT_319;1;LST;0;
+CT_32;1;"LST;ATY;MAP";0;TB-Comment:Mikroangiopathie. Marklagerischämie
+CT_322;0;HEALTHY;0;
+CT_323;1;LST;0;
+CT_324;1;"LST;ATY";-1;Pre-contrast
+CT_328;1;"IPH;SAH";0;to-be-relabeled
+CT_329;0;HEALTHY;0;
+CT_330;0;HEALTHY;-1;Pre-contrast
+CT_331;0;HEALTHY;0;
+CT_333;1;"LST;OTHER";-1;Pre-contrast, TB-Comment: Developmental venous anomaly (Kleinhirn)
+CT_338;1;IPH;0;to-be-relabeled
+CT_339;0;HEALTHY;0;
+CT_34;0;HEALTHY;-1;Pre-contrast
+CT_340;1;"LST;CSDH";0;
+CT_341;1;OTHER;0;TB-Comment: Contusion damage
+CT_342;1;"IPH;IVH;SAH;MSE";0;to-be-relabeled
+CT_343;1;"IPH;IVH;MSE;MSHIFT";0;to-be-relabeled
+CT_344;1;"IPH;IVH;MSE;MSHIFT";0;to-be-relabeled
+CT_346;1;IPH;0;to-be-relabeled
+CT_347;1;"IPH;SAH;MSE;MSHIFT";0;to-be-relabeled
+CT_348;1;"SAH;MSE";0;to-be-relabeled
+CT_349;1;LST;-1;Pre-contrast
+CT_35;1;IPH;0;to-be-relabeled
+CT_353;0;HEALTHY;-1;Pre-contrast
+CT_354;0;HEALTHY;0;
+CT_355;1;IPH;-1;Pre-contrast
+CT_356;0;HEALTHY;0;
+CT_357;1;LST;0;
+CT_359;1;"SDH;MSE";0;to-be-relabeled
+CT_36;0;HEALTHY;-1;Pre-contrast
+CT_360;1;"MAP;OTHER";-1;Pre-contrast, TB-Comment: Contusional damage
+CT_361;1;LST;0;
+CT_362;1;FRAC;0;to-be-relabeled
+CT_363;1;"IPH;SAH;MSE";0;to-be-relabeled
+CT_366;1;"MSE;MSHIFT";0;to-be-relabeled
+CT_367;1;OTHER;0;TB-Comment: Focal cortical (postinfectuous) calcification
+CT_368;1;LST;0;
+CT_369;1;"IPH;MSE;MSHIFT";0;to-be-relabeled
+CT_37;1;"LST;MAP";0;
+CT_370;1;;0;to-be-relabeled
+CT_372;1;"OTHER; SST";0;TB-Comment: Artifact
+CT_373;1;CAV;0;
+CT_374;0;HEALTHY;0;
+CT_375;0;HEALTHY;0;
+CT_378;1;SAH;0;to-be-relabeled
+CT_380;1;"LST;CAV;MAP;OTHER";0;TB-Comment: Marklagerischämie
+CT_383;1;"IPH;SDH;SAH;MSE";0;to-be-relabeled
+CT_384;0;HEALTHY;0;
+CT_386;1;"ASDH;MSHIFT";-1;Pre-contrast
+CT_388;0;HEALTHY;-1;Pre-contrast
+CT_389;1;OTHER;0;TB-Comment: Focal cortical calcification
+CT_39;1;MAP;-1;Pre-contrast
+CT_390;1;IPH;-1;Pre-contrast
+CT_391;0;HEALTHY;0;
+CT_392;1;"IPH;MSE";0;to-be-relabeled
+CT_393;1;"IPH;MSE";0;to-be-relabeled
+CT_394;0;HEALTHY;0;
+CT_395;0;HEALTHY;0;
+CT_396;1;"IPH;MSE;MSHIFT";0;to-be-relabeled
+CT_397;1;"IPH;FRAC";0;to-be-relabeled
+CT_4;1;"IPH;EDH;FRAC;MSE;MSHIFT";0;to-be-relabeled
+CT_40;1;"IPH;MSE";0;to-be-relabeled
+CT_401;1;"ATY;OTHER";0;TB-Comment: Artifact
+CT_402;1;"IPH;SDH;SAH;FRAC;MSE;MSHIFT";0;to-be-relabeled
+CT_403;1;"SAH;IVH";-1;Pre-contrast
+CT_404;1;SDH;0;to-be-relabeled
+CT_405;0;HEALTHY;0;
+CT_406;1;SAH;0;to-be-relabeled
+CT_407;0;HEALTHY;0;
+CT_408;1;IPH;0;to-be-relabeled
+CT_41;1;"IPH;SDH;SAH";0;to-be-relabeled
+CT_410;1;ATY;0;
+CT_411;1;"LST;MAP";0;TB-Comment: Microangiopathy (Fazekas 3)
+CT_412;1;"SDH;MSE";0;to-be-relabeled
+CT_414;0;HEALTHY;-1;Pre-contrast
+CT_416;1;"IPH;SAH;MSE";0;to-be-relabeled
+CT_417;1;"EDH;FRAC;MSE";0;to-be-relabeled
+CT_418;0;HEALTHY;0;
+CT_420;1;"IPH;IVH;MSE;MSHIFT";0;to-be-relabeled
+CT_421;0;HEALTHY;0;
+CT_422;1;"IPH;MSE";0;to-be-relabeled
+CT_423;1;IPH;0;to-be-relabeled
+CT_424;1;OTHER;0;TB-Comment: Artifact
+CT_425;1;"IPH;MSE";0;to-be-relabeled
+CT_428;1;"LST;ASDH;CSDH";0;
+CT_429;1;"IPH;SAH";0;to-be-relabeled
+CT_431;0;HEALTHY;0;
+CT_434;1;"EDH;FRAC;OTHER";-1;Pre-contrast, TB-Comment: Contusion damage
+CT_435;1;SAH;0;to-be-relabeled
+CT_436;1;SDH;0;to-be-relabeled
+CT_439;0;HEALTHY;-1;Pre-contrast
+CT_440;1;"ATY;OTHER";0;TB-Comment: Contusion damage
+CT_441;1;ATY;-1;Pre-contrast
+CT_442;0;HEALTHY;0;
+CT_443;1;"IPH;HER";-1;Pre-contrast
+CT_444;1;OTHER;0;TB-Comment: Artifact
+CT_445;1;"FRAC;OTHER";0;TB-Comment: Atlas (spine) fracture
+CT_446;1;"IPH;MSE;MSHIFT";0;to-be-relabeled
+CT_447;1;SAH;0;to-be-relabeled
+CT_448;0;HEALTHY;0;
+CT_449;1;"IPH;SDH;SAH;FRAC;MSE";0;to-be-relabeled
+CT_45;0;HEALTHY;-1;Pre-contrast
+CT_450;1;OTHER;0;TB-Comment: (Postinflammatory) cortical calcification
+CT_451;1;LST;0;
+CT_452;1;"IVH;SAH;MSE";0;to-be-relabeled
+CT_453;1;TUM;0;
+CT_454;1;"IPH;SDH;SAH";0;to-be-relabeled
+CT_455;1;"SDH;FRAC;MSE;MSHIFT";0;to-be-relabeled
+CT_456;1;"IPH;SAH";0;to-be-relabeled
+CT_458;1;SDH;0;to-be-relabeled
+CT_459;0;HEALTHY;0;
+CT_460;1;MAP;0;
+CT_461;1;"IPH;SDH;FRAC;MSE;MSHIFT";0;to-be-relabeled
+CT_462;1;MAP;0;
+CT_463;0;HEALTHY;0;
+CT_465;1;OTHER;0;TB-Comment: Focal cortical calcification
+CT_466;1;LST;0;
+CT_467;0;HEALTHY;-1;Pre-contrast
+CT_469;1;"IPH;IVH;SAH;MSE;MSHIFT";0;to-be-relabeled
+CT_47;1;LST;-1;Pre-contrast
+CT_470;0;HEALTHY;-1;Pre-contrast
+CT_471;1;LST;-1;Pre-contrast
+CT_472;1;"TUM;OTHER";-1;Pre-contrast, TB-Comment: A.e. zystischer Tumor
+CT_474;1;IPH;0;to-be-relabeled
+CT_475;0;HEALTHY;0;
+CT_476;0;HEALTHY;0;
+CT_478;0;HEALTHY;-1;Pre-contrast
+CT_479;1;"ASDH;CSDH;IPH;FRAC;MSHIFT;HER";-1;Pre-contrast
+CT_48;1;"IPH;IVH;SAH;MSE;MSHIFT";0;to-be-relabeled
+CT_480;1;"ASDH;MSHIFT;HER;TUM";-1;Pre-contrast
+CT_482;0;HEALTHY;-1;Pre-contrast
+CT_483;1;"LST;SAH";0;
+CT_484;1;OTHER;0;TB-Comment: Galeahämatom
+CT_485;1;"IPH;MSE";0;to-be-relabeled
+CT_486;0;;0;
+CT_488;1;"IPH;IVH;SAH;MSE;MSHIFT";0;to-be-relabeled
+CT_489;1;SAH;0;to-be-relabeled
+CT_49;0;HEALTHY;-1;Pre-contrast
+CT_50;1;SST;0;
+CT_52;1;"IPH;FRAC";-1;Pre-contrast
+CT_53;0;HEALTHY;0;
+CT_54;0;HEALTHY;0;
+CT_55;1;"IPH;MSE;MSHIFT";0;to-be-relabeled
+CT_57;1;IPH;0;to-be-relabeled
+CT_58;1;OTHER;-1;Pre-contrast, TB-Comment:Small contusion defect
+CT_60;1;"IPH;MSE;MSHIFT";0;to-be-relabeled
+CT_62;0;HEALTHY;0;
+CT_63;0;HEALTHY;-1;Pre-contrast
+CT_66;1;"ATY;FRAC;OTHER";0;TBcomment: Contusion defect
+CT_67;1;"EDH;OTHER";0;TBcomment: Contusion defect
+CT_68;1;IPH;0;to-be-relabeled
+CT_69;1;ATY;-1;Pre-contrast
+CT_71;0;HEALTHY;-1;Pre-contrast
+CT_72;0;HEALTHY;-1;Pre-contrast
+CT_73;1;"IPH;MSHIFT;HER";0;
+CT_74;0;HEALTHY;-1;Pre-contrast
+CT_76;0;HEALTHY;0;
+CT_77;0;HEALTHY;-1;Pre-contrast
+CT_78;1;LST;0;
+CT_79;0;HEALTHY;0;
+CT_8;1;"IPH;SAH;MSE";0;to-be-relabeled
+CT_80;1;"IPH;IVH;MSE";0;to-be-relabeled
+CT_81;0;HEALTHY;0;
+CT_82;0;HEALTHY;0;
+CT_84;1;SAH;0;to-be-relabeled
+CT_85;0;HEALTHY;0;
+CT_86;1;"SDH;MSE;MSHIFT";0;to-be-relabeled
+CT_88;0;HEALTHY;-1;Pre-contrast
+CT_89;1;ATY;-1;Pre-contrast
+CT_9;0;HEALTHY;0;
+CT_90;1;IPH;0;to-be-relabeled
+CT_92;1;"IPH;MSE";0;
+CT_93;0;HEALTHY;-1;Pre-contrast
+CT_95;1;"IPH;MSHIFT;IVH";-1;Pre-contrast
+CT_97;0;HEALTHY;-1;Pre-contrast
+CT_98;0;HEALTHY;-1;Pre-contrast
+CT_99;1;ATY;0;
