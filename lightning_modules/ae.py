@@ -1,12 +1,9 @@
-import os
-from pyexpat.errors import codes
 import pytorch_lightning as pl
 import torch
 from torch.nn import functional as F
-from models.components import Encoder, Decoder
+from components import Encoder, Decoder
 from utils.utils import log_average
 from utils.visualization import viz_testing, viz_testing_gif, viz_training
-import matplotlib.pyplot as plt
 
 
 class AE(pl.LightningModule):

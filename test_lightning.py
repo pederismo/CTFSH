@@ -1,4 +1,3 @@
-from matplotlib.pyplot import ylim
 import pytorch_lightning as pl
 from argparse import ArgumentParser
 import pandas as pd
@@ -12,6 +11,7 @@ from lightning_modules.ae_msssim import AE_MSSSIM
 from lightning_modules.vae_msssim import VAE_MSSSIM
 from lightning_modules.ae_msssim_acai import AE_MSSSIM_ACAI
 from lightning_modules.vae_msssim_acai import VAE_MSSSIM_ACAI
+from lightning_modules.igd import IGD
 
 import os
 import torch.nn.functional as F
@@ -29,7 +29,7 @@ pl.seed_everything(42, workers=True)
 parser = ArgumentParser()
 parser.add_argument('--batch_size',     default=2, type=int)
 parser.add_argument('--checkpoint',     default='.', type=str)
-parser.add_argument('--architecture',   default='VAE_MSSSIM_ACAI', choices=['AE', 'VAE', 'AE_MSSSIM', 'VAE_MSSSIM', 'AE_MSSSIM_ACAI', 'VAE_MSSSIM_ACAI'])
+parser.add_argument('--architecture',   default='IGD', choices=['AE', 'VAE', 'AE_MSSSIM', 'VAE_MSSSIM', 'AE_MSSSIM_ACAI', 'VAE_MSSSIM_ACAI', 'IGD'])
 parser.add_argument('--stripped',       default=False, type=bool)
 parser.add_argument('--mean_map',       default=False, type=bool)
 parser.add_argument('--gpu',            default=0, type=int)
@@ -89,7 +89,8 @@ elif args.architecture == 'AE_MSSSIM_ACAI':
 elif args.architecture == 'VAE_MSSSIM_ACAI':
     model = VAE_MSSSIM_ACAI.load_from_checkpoint(args.checkpoint, latent_size=latent_size, rho=rho, lambda_fool=lambda_fool, gamma=gamma)
 
-model = model.cuda(device=torch.device('cuda:' + str(args.gpu)))
+elif args.architecture == 'IGD':
+    model = IGD.load_from_checkpoint(args.checkpoint, latent_size=latent_size, rho=rho, lambda_fool=lambda_fool, gamma=gamma, map_location=torch.device('cuda:' + str(args.gpu)))
 
 # metrics containers for DataFrame
 metrics = []
@@ -114,7 +115,7 @@ for disease, dataset in unhealthy_datasets.items():
         model.mean_map = torch.load("./", map_location=model.device).unsqueeze(0)
 
     # logger
-    exp_name = "disease:" + disease + "_mask:" + model.mask
+    exp_name = "disease:" + disease + "_mask:" + str(args.mean_map)
     print("Started: " + exp_name)
     logger = TensorBoardLogger(save_dir=output_dir, name=exp_name)
     test_loader_healthy = DataLoader(dataset_healthy, shuffle=False, batch_size=args.batch_size, num_workers=4)

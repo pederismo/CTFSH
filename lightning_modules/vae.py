@@ -1,12 +1,10 @@
 from typing import Any
 import pytorch_lightning as pl
-from models.components import EncoderVAE, Decoder
+from components import EncoderVAE, Decoder
 import torch
-import numpy as np
-import torch.nn as nn
-from utils.visualization import viz_interpolation_gif, viz_training, viz_testing_gif, viz_testing
+from utils.visualization import viz_training, viz_testing_gif, viz_testing
 from torch.nn import functional as F
-from utils.utils import Collector, log_average
+from utils.utils import log_average
 
 
 class VAE(pl.LightningModule):

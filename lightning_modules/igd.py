@@ -1,6 +1,5 @@
 import torch.nn.functional as F
 import torch
-from models.components import Discriminator
 from lightning_modules.ae_msssim_acai import AE_MSSSIM_ACAI
 from utils.visualization import viz_training, viz_testing_gif, viz_testing
 from utils.utils import log_average
@@ -140,32 +139,30 @@ class IGD(AE_MSSSIM_ACAI):
 
 
     def test_step(self, batch, batch_idx, dataset_idx):
-        # get reconstructions and codes
+        # get reconstructions, codes, residuals
         originals = batch["image"]
         labels = batch["label"]
         reconstructions, codes = self(originals)
-        
-        # calculate image loss
-        residual = F.l1_loss(reconstructions, originals, reduction='none')
-        l1 = torch.mean(residual)
-        ms_ssim_loss = 1 - ms_ssim(originals, reconstructions, data_range=1, size_average=True, win_size=7)
-        image_score = self.rho * l1 + (1 - self.rho) * ms_ssim_loss
+        for visual_index in range(codes.shape[0]):
+            residual = F.l1_loss(reconstructions[visual_index], originals[visual_index], reduction='none')
+            if self.mean_map is not None:
+                residual = torch.relu(residual - self.mean_map)        
+            
+            # calculate image score and feature score (GSVDD)
+            l1 = torch.mean(residual, dim=[1, 2, 3])
+            ms_ssim_loss = 1 - ms_ssim(originals[visual_index], reconstructions[visual_index], data_range=1, size_average=True, win_size=7)
+            rec_score = self.rho * l1 + (1 - self.rho) * ms_ssim_loss
+            # feat_score = torch.mean((codes - self.c) ** 2, dim=1)  # DSVDD
+            diff = (codes[visual_index] - self.c.to(self.device)) ** 2
+            dist = -1 * torch.sum(diff, dim=1) / self.sigma.to(self.device)
+            feat_score = 1 - torch.exp(dist)       
+            combined_score = (0.5 * rec_score + 0.5 * feat_score) 
 
-        # gsvdd
-        diff = (codes - self.c) ** 2
-        dist = -1 * (torch.sum(diff, dim=1) / self.sigma)
-        feat_score = torch.mean(1 - torch.exp(dist))
-
-        # reconstruction score
-        combined_score = 0.5 * image_score + 0.5 * feat_score
-
-        # append all scores and respective targets
-        for i in range(originals.shape[0]):
-            self.codes.append(codes[i].detach())
-            self.rec_preds.append(image_score[i].detach())
-            self.feat_preds.append(feat_score[i].detach())
-            self.combined_preds.append(combined_score[i].detach())
-            self.targets.append(labels[i].detach())
+            self.codes.append(codes[visual_index].detach())
+            self.rec_preds.append(rec_score.detach())
+            self.feat_preds.append(feat_score.detach())
+            self.combined_preds.append(combined_score.detach())
+            self.targets.append(labels[visual_index].detach())
 
             # visualize if necessary
             if self.visualize_testing:
@@ -175,11 +172,10 @@ class IGD(AE_MSSSIM_ACAI):
                 else:
                     input_type = 'Unhealthy'
                 
-                # visualize 
-                viz_testing(originals[i], reconstructions[i], residual[i], input_type, batch['number'][i],
-                                combined_score[i], feat_score[i], self.thr_rec, self.thr_feat, labels[i], self.logger.experiment)
-                viz_testing_gif(residual[i], input_type + ' residual', batch["number"][i], 
-                                combined_score[i], feat_score[i], self.thr_rec, self.thr_feat, labels[i], self.logger.experiment) 
+                viz_testing(originals[visual_index], reconstructions[visual_index], residual, input_type, batch['number'][visual_index],
+                                rec_score, feat_score, self.thr_rec, self.thr_feat, labels[visual_index], self.logger.experiment)
+                viz_testing_gif(residual, input_type + ' residual', batch["number"][visual_index], 
+                                rec_score, feat_score, self.thr_rec, self.thr_feat, labels[visual_index], self.logger.experiment)
     ### END OF LIGHTNING STEPS ###
 
 

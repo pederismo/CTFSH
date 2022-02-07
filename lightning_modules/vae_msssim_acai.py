@@ -1,8 +1,8 @@
 import torch.nn.functional as F
 import torch
-from models.components import Discriminator
+from components import Discriminator
 from lightning_modules.vae_msssim import VAE_MSSSIM
-from utils.visualization import viz_interpolation, viz_training, viz_testing_gif, viz_testing
+from utils.visualization import viz_training
 from utils.utils import log_average
 from pytorch_msssim import ms_ssim
 

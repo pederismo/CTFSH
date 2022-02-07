@@ -1,7 +1,5 @@
 import os
 from argparse import ArgumentParser
-import torch
-from torch.utils.data import DataLoader
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import TensorBoardLogger
 from datasets.cq500_module import CQ500DataModule
@@ -28,13 +26,14 @@ def cli_main():
     parser.add_argument('--spatial_size',       default=128, choices=[64, 128], type=int)
     parser.add_argument('--stripped',           default=False, type=bool)
     parser.add_argument('--gpu',                default=1, type=int)
-    parser.add_argument('--dataset_root',       default='.', type=str)
+    parser.add_argument('--dataset_dir',        default='.', type=str)
+    parser.add_argument('--output_dir',         default='.', type=str)
 
     parser = pl.Trainer.add_argparse_args(parser)
     args = parser.parse_args() 
 
     # data
-    cq500_root = args.dataset_root
+    cq500_root = args.dataset_dir
     datamodule = CQ500DataModule(data_dir=cq500_root, stripped=args.stripped, batch_size=args.batch_size, spatial_size=args.spatial_size)
 
     rho = 0.15
@@ -66,7 +65,7 @@ def cli_main():
     # choose gpu and logger
     gpus = [args.gpu]
     experiment_name = args.architecture if not args.stripped else args.architecture + "-stripped"
-    root_log_dir = os.path.join("../../../../mnt/aquarium/michele/rebuttal-raw", experiment_name)
+    root_log_dir = os.path.join(args.output_dir, experiment_name)
     train_logger = TensorBoardLogger(save_dir=root_log_dir, name="pretraining")
     
     # create checkpoint callback
